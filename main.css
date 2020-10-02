@@ -90,6 +90,7 @@ body{
 .container section{
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,19 +175,28 @@ body{
     border-radius: 200px 0 0 0;
 }
 
-.contact{
-    background-image: url(https://picsum.photos/seed/829/900);
-    background-size: cover;
-    background-attachment: fixed;
-    color:royalblue;
-}
-
 .showcase{
-    background-image: url(https://picsum.photos/seed/666/900);
-    background-size: cover;
-    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.wrapper_showcase{
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+
+.showcase_tittle{
+    font-size: 2rem;
+}
+.wrapper_showcase img{
+    transition-duration: 2s;
+}
+.wrapper_showcase img:hover{
+    border-radius: 200px;
+}
 .rotateIcon{
     font-size: 4rem;
     color:royalblue;
@@ -195,6 +205,15 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+.contact{
+    background-image: url(https://picsum.photos/seed/829/900);
+    background-size: cover;
+    background-attachment: fixed;
+    color:royalblue;
+}
+
+
     
 
 .alertAbout{
